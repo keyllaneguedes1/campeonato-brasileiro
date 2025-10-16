@@ -97,10 +97,10 @@ class FavoritosScreen extends StatelessWidget {
 
           return Column(
             children: [
-              // Header com estatísticas
+              
               _buildHeaderStats(context, timesFavoritos),
               
-              // Lista de favoritos
+              
               Expanded(
                 child: _buildListaFavoritos(context, provider, timesFavoritos),
               ),

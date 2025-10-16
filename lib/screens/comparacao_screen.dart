@@ -230,10 +230,6 @@ class _ComparacaoScreenState extends State<ComparacaoScreen> {
     );
   }
 
-  // Os métodos _buildResultadoComparacao, _buildCabecalhoComparacao, etc.
-  // permanecem os mesmos do código original, apenas atualize as cores
-  // onde houver referências ao verde (Colors.green) para AppColors.accent
-
   Widget _buildResultadoComparacao() {
     return Expanded(
       child: SingleChildScrollView(
@@ -338,9 +334,7 @@ class _ComparacaoScreenState extends State<ComparacaoScreen> {
       ),
     );
   }
-
-  // ... (os outros métodos _buildGraficoPontos, _buildEstatisticasComparativas, etc.
-  // permanecem iguais, apenas atualize as cores se necessário)
+  
 
   Widget _buildGraficoPontos() {
     final maxPontos = [_time1!.pontos, _time2!.pontos].reduce((a, b) => a > b ? a : b);

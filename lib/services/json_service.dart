@@ -14,7 +14,7 @@ class JsonService {
           .map((timeJson) => Time.fromJson(timeJson))
           .toList();
       
-      // Ordenar por pontos, vitórias, saldo de gols e gols pró
+      
       times.sort((a, b) {
         if (b.pontos != a.pontos) return b.pontos.compareTo(a.pontos);
         if (b.vitorias != a.vitorias) return b.vitorias.compareTo(a.vitorias);
